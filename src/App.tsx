@@ -16,7 +16,7 @@ export default function App() {
         </button>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-28">
+      <div className="grid md:grid-cols-2 md:gap-28 gap-16">
         <div>
           {!endorsed ?
             <div className="bg-green-600 text-white text-center py-1 mb-4">
