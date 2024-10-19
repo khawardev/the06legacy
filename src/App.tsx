@@ -8,10 +8,10 @@ export default function App() {
   return (
     <div className='md:w-9/12 px-4 mx-auto  md:py-12 py-4'>
       <div className=' space-x-3 mb-6'>
-        <button className={`${!endorsed && 'bg-black text-white'}`} onClick={() => setEndorsed(false)} >
+        <button className={`button ${!endorsed && 'bg-black text-white button'}`} onClick={() => setEndorsed(false)} >
           ENDORSED
         </button>
-        <button className={`${endorsed && 'bg-black text-white'}`} onClick={() => setEndorsed(true)} >
+        <button className={`button ${endorsed && 'bg-black text-white button'}`} onClick={() => setEndorsed(true)} >
           NOT ENDORSED
         </button>
       </div>
@@ -67,7 +67,7 @@ export default function App() {
                 </div>
                 <textarea name="tell us" required cols={30} placeholder='Tell us why.' rows={10} className=' w-full border-2 p-1 border-black/30 ' id="" />
                 <div className='flex-row-reverse flex'>
-                  <button type='submit'>SEND</button>
+                  <button className='button' type='submit'>SEND</button>
                 </div>
               </form>
             </div>
@@ -119,12 +119,12 @@ export default function App() {
 
               <div className="flex items-center justify-between mt-3 ">
                 <div>
-                  <button >
+                  <button className='button' >
                     SEE EXAMPLE LETTER
                   </button>
                 </div>
 
-                <button onClick={() => (setEmail(!email))} className=' bg-green-300 border-green-500' >
+                <button onClick={() => (setEmail(!email))} className='button bg-green-300 border-green-500' >
                   {email ? 'EMAIL' : 'Warren@gmail.com'}
                 </button>
               </div>
@@ -139,10 +139,10 @@ export default function App() {
                 Visit your official's website and find their contact form, email or phone number. Feel free to use the example text as a guide, but adding your own words will make a stronger impact.
               </p>
               <div className="space-x-2 mt-3 ">
-                <button >
+                <button className='button' >
                   GO TO WEBSITE
                 </button>
-                <button >
+                <button className='button' >
                   SEE EXAMPLE TEXT
                 </button>
               </div>

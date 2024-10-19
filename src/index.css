@@ -22,7 +22,7 @@ h1 {
   line-height: 1.1;
 }
 
-button {
+.button {
   border-radius: 9999px;
   border-color: rgb(0 0 0 / 0.3);
   border-width: 2px;
