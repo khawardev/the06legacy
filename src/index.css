@@ -6,6 +6,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #ecece7;
 }
 
 a {
@@ -20,6 +21,16 @@ a:hover {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+.container-center {
+  width: 75%;
+  padding-left: 1rem /* 16px */;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3rem /* 48px */;
+  padding-bottom: 3rem;
 }
 
 .button {
@@ -39,4 +50,29 @@ h1 {
   a:hover {
     color: #747bff;
   }
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 13px;
+  height: 13px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8b8b8b;
+  border-radius: 120px;
+  border: 3px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #707070;
+}
+
+::-webkit-scrollbar-corner {
+  background: #f1f1f1;
 }
